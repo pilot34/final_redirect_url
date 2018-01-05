@@ -25,6 +25,7 @@ module FinalRedirectUrl
   end
 
   def self.get_final_redirect_url(url, limit = 10)
+    warn "get_final_redirect_url #{url} limit: #{limit}"
     if limit <= 0
       return url
     end
